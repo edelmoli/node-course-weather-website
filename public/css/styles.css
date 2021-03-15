@@ -1,0 +1,37 @@
+h1 {
+  color: red;
+}
+
+body {
+  min-height: 100vh;
+  font-family: arial;
+  /* margin-left: 45%; */
+  min-width: 100vw;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  border: 2px red solid;
+}
+
+.footer-shared {
+  color: yellow;
+  background: blue;
+  justify-self: flex-end;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  width: 290px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888;
+  background: #888;
+  color: white;
+  padding: 8px;
+}
