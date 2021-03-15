@@ -3,9 +3,7 @@ const http = require("https");
 
 const oddsToday = (team, callback) => {
 
-    console.log('begining oddsToday')
-
-    var nowDate = new Date(); 
+       var nowDate = new Date(); 
     var monthRequest =(nowDate.getMonth()+1)
     var dayRequest =(nowDate.getDate())
 

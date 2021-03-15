@@ -1,4 +1,3 @@
-console.log('Javascript client side for odds is loaded')
 
 // to call the request prepared with fetch
 

@@ -1,5 +1,3 @@
-console.log('Javascript client side is loaded')
-
 // to call the request prepared with fetch
 
 
