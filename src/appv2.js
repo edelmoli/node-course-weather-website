@@ -131,20 +131,21 @@ app.get('/weather', (req, res) => {
             console.log('Location requested: ' + location)
     
             // forecast(latitude, longitude, (error, data) => {
-            forecast(latitude, longitude, (error, {temperature, feelslike, weather_description, location} = {}) => {
+            forecast(latitude, longitude, (error, {temperature, feelslike, weather_description, location, humidity} = {}) => {
                 if (error) {
                     return res.json({
                         error: error
                     })
                     console.log(error)
                 } else {
-
+                   
                     res.json({
                         temperature,
                         feelslike,
                         location,
                         weather_description,
-                        address: req.query.address
+                        address: req.query.address,
+                        humidity
                     })
 
                     // console.log('It is currently ' + data.temperature + 'C and it feels like ' + data.feelslike + 'C. It is ' + data.weather_description + ' in ' + data.location)
