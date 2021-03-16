@@ -6,6 +6,7 @@ const oddsToday = require('./utils/oddsToday')
 
 //we need hbs module to work with partials
 const hbs = require('hbs')
+const port = process.env.PORT || 3000
 
 // here we create the web server
 const app = express()
@@ -234,6 +235,6 @@ app.get('*', (req, res) => {
 
 
 // we need to start the server up with the port and a callback function with the resuls
-app.listen(3000, () => {
-    console.log('Server up in port 3000')
+app.listen(port, () => {
+    console.log('Server up in port ' + port)
 })

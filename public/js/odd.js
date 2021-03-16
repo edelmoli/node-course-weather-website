@@ -18,8 +18,8 @@ teamsForm.addEventListener('submit', (e) => {
     const teamOdd = team.value
     console.log(team)
 
-    fetch('http://localhost:3000/odds?team=' + teamOdd ).then((response) => {
-        //fetch('http://localhost:3000/weather?address=').then((response) => {
+    // fetch('http://localhost:3000/odds?team=' + teamOdd ).then((response) => {
+        fetch('/odds?team=' + teamOdd ).then((response) => {
             response.json().then((data) => {
                 console.log(data)
                 if (data.error) {
